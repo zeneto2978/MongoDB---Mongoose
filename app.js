@@ -46,7 +46,7 @@ link.save().then(doc => {
 
 let db = mongoose.connection;
 
-db.on("error", () => { console.log("houve um erro") });
+db.on("error", () => { console.log("houve um error") });
 db.once("open", () => {console.log("Banco carregado") })
 
 
